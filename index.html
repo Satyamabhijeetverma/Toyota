@@ -51,6 +51,7 @@ button.button{
   width: 150px;
   font-size: 9px;
   cursor:pointer;
+  margin-bottom: 10px;
 }
  button.button2{
     background-color: red;
@@ -68,11 +69,66 @@ button.ontop{
     cursor:pointer;
     overflow: hidden;
 }
+
+.links{
+  background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+}
+
  td.clm {
    background-color: #E8E8E8
  }
  body{
   font-family: arial;
+  overflow-x: hidden !important;
+ }
+
+ @media (max-width:720px){
+  .ontop{
+    margin-top: 90px;
+    margin-left: -120px;
+
+  }
+
+  #imageLogo1{
+    width: 350px;
+  }
+
+.imageLogo2{
+  width: 200px;
+}
+
+.imageLogo2 img{
+  width: 230px;
+}
+
+
+.text{
+ width: 350px;
+ font-size: 13px !important;
+}
+
+.button2{
+  margin-left: -35px !important;
+  margin-bottom: 10px !important;
+}
+
+.bottomLogo img{
+  margin-left: -40px !important;
+}
+
+.links{
+margin-top: 90px !important;
+}
+
+
+ }
+
+ @media (min-width:721px){
+
  }
 
 </style>
@@ -88,16 +144,18 @@ button.ontop{
 </table>
 <table>
 <tr Height="325">
-<td width ="500" colspan="3"><img src="2.jpg" alt="logo" style="width: 100%"></td>
+<td width = "500" id="imageLogo1" colspan="3"><img src="2.jpg" alt="logo" style="width: 100%"></td>
 </tr>
 <tr class="shopnow" Height="95">
 <td width="175" colspan="3"><center><h2 style="color:red; font-size: 18px"><b>There’s a Toyota for you—shop now</b></h2><p style="color:black; font-size: 14px" ><font face="arial"><b><p>It’s easy to have peace of mind when you drive a Toyota.</p> <p>Many new Toyota vehicles now include Toyota Safety Sense™ (TSS)1, standard </p><p>comprehensive safety packages.</p></b></font></p>
+
 <button class="button" type="button" onclick="window.location.href='https://www.google.co.in'" >LEARN MORE ABOUT TSS</button></td><centre>
 </tr>
 
 <tr Height="95">
-<td class="clm" width ="175" colspan="2"><img src="3.jpg" alt="logo" >
+<td class="clm imageLogo2"  width ="175" colspan="2"><img src="3.jpg" alt="logo" >
 </td>
+
 <td class="clm" width ="175" colspan="1"><p style="color:black; font-size: 14px"><b>Qualified Buyers Get</b></p><p style="color:red; font-size: 48px"><b>0% APR</b></p>
   <p style="color:black; font-size: 20px"><b>FOR 60 MONTH</b></p>
     <p style="color:red; font-size: 14px"><b>+ $500 Subvention Bonus3</b></p>
@@ -107,7 +165,7 @@ button.ontop{
 
 </tr>
 <tr Height="95">
-<td width ="175" colspan="2"><img src="4.jpg" alt="logo">
+<td class="imageLogo2" width ="175" colspan="2"><img src="4.jpg" alt="logo">
 </td>
 <td width ="175" colspan="1"><p style="color:black; font-size: 14px"><b>Qualified Buyers Get</b></p><p style="color:red; font-size: 48px"><font face="arial"><b>0% APR</b></font></p>
   <p style="color:black; font-size: 20px"><b>FOR 60 MONTH</b></p>
@@ -119,7 +177,7 @@ button.ontop{
 
 </tr>
 <tr Height="95">
-<td class="clm" width ="175" colspan="2"><img src="5.jpg" alt="logo">
+<td class="clm imageLogo2" width ="175" colspan="2"><img src="5.jpg" alt="logo">
 </td>
 <td class="clm" width ="175" colspan="1"><p style="color:black; font-size: 14px"><b>Qualified Buyers Get</b></p><p style="color:red; font-size: 48px"><b>0% APR</b></p>
     <p style="color:black; font-size: 20px;"><b>FOR 60 MONTH</b></p>
@@ -132,7 +190,7 @@ button.ontop{
 
 </tr>
 <tr Height="95">
-<td width ="175" colspan="2"><img src="6.jpg" alt="logo">
+<td width ="175" class="imageLogo2" colspan="2"><img src="6.jpg" alt="logo">
 </td>
 <td width ="175" colspan="1"><p style="color:black; font-size: 14px"><b>Qualified Buyers Get</b></p><p style="color:red; font-size: 48px"><b>0% APR</b></p>
   <p style="color:black; font-size: 20px"><b>FOR 60 MONTH</b></p>
@@ -147,17 +205,18 @@ button.ontop{
 <tr Height="65">
 <td width="500" colspan="3"><img src="8.jpg" alt="logo" style="width: 100%"></td>
 </tr>
+
 <table class="second">
 <tr Height="150">
-<td width="100" style="padding-left: 25px;"><button class="ontop" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>FIND A DEALER</b></button> </td>
-<td width="100" style="padding-left: 25px;"><button class="ontop" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>FIND YOUR TOYOTA</b></button></td>
-<td width="100" style="padding-left: 25px;"><button class="ontop" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>SEARCH INVENTORY</b></button></td>
-<td width="100" colspan="1"><img src="ToyotaLogo.png" alt="logo" style="width: 100%"></td>
+<td width="100" style="padding-left: 25px;"><button class="links" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>FIND A DEALER</b></button> </td>
+<td width="100" style="padding-left: 25px;"><button class="links" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>FIND YOUR TOYOTA</b></button></td>
+<td width="100" style="padding-left: 25px;"><button class="links" onclick="window.location.href='https://www.google.co.in'" style="color:red; font-size: 9px"><b>SEARCH INVENTORY</b></button></td>
+<td width="100" class="bottomLogo" colspan="1"><img src="ToyotaLogo.png" alt="logo" style="width: 100%"></td>
 </tr>
 </table>
 <table class="third">
 <tr Height="200">
-<td class="clm" width="500" colspan="3" style="padding-left: 25px; padding-right: 25px; font-size: 10px">
+<td class="clm text" width="500" colspan="3" style="padding-left: 25px; padding-right: 25px; font-size: 10px">
 <p>* Extra-cost color.</p>
 <p>1 Drivers are responsible for their own safe driving. Always pay attention to your surroundings and drive safely. System effectiveness is dependent on many factors including road, weather and vehicle conditions. See Owner’s Manual for additional limitations and details. </p>
 <p>2 AVAILABLE TO QUALIFIED CUSTOMERS who finance a new 2018 Camry through Toyota Financial Services. Higher rates apply for customers with lower credit ratings. Specific vehicles are subject to availability. APR may not be combined with any other Customer Cash or lease offers. Monthly payment for every $1,000 financed is $16.67. Must take retail delivery from dealer stock. Dealer sets final actual price. Offer valid 03-01-2018 through 04-02-2018 in AR, LA, MS, OK, TX only. Contact participating dealer for details.</p>
